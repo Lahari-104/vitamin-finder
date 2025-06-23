@@ -8,7 +8,7 @@
 
 👉 [Click here to view the project live](https://your-firebase-project.web.app)
 
-*(Replace with your actual Firebase hosting link)*
+
 
 ---
 
