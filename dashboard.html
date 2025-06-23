@@ -117,6 +117,7 @@
   };
 
   firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
 
   let vitaminData = {};
   window.onload = () => {
@@ -140,7 +141,80 @@
       window.location.href = 'login.html';
     });
   }
-</script>
 
+  function searchVitamin() {
+    const food = document.getElementById("searchBox").value.toLowerCase();
+    const category = document.getElementById("categorySelect").value;
+    const resultDiv = document.getElementById("result");
+
+    let found = false;
+    let output = "";
+
+    const searchIn = category === "all"
+      ? Object.values(vitaminData).flatMap(cat => Object.entries(cat))
+      : Object.entries(vitaminData[category] || {});
+
+    for (let [item, data] of searchIn) {
+      if (item === food) {
+        output += `<h2>Vitamins in ${capitalize(item)}</h2>`;
+        if (data.image) {
+          output += `<img src="${data.image}" class="food-image" alt="${item}" />`;
+        }
+        output += "<ul>";
+        for (let [key, value] of Object.entries(data.vitamins)) {
+          output += `<li><strong>${key}:</strong> ${value}</li>`;
+        }
+        output += "</ul>";
+        found = true;
+        updateRecentSearches(item);
+        break;
+      }
+    }
+
+    if (!found) {
+      output = `<p>No vitamin data found for "<strong>${food}</strong>".</p>`;
+    }
+
+    resultDiv.innerHTML = output;
+  }
+
+  function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
+  function updateRecentSearches(food) {
+    const user = firebase.auth().currentUser;
+    if (!user) return;
+
+    const docRef = db.collection("recentSearches").doc(user.uid);
+
+    docRef.get().then((doc) => {
+      let searches = [];
+      if (doc.exists && Array.isArray(doc.data().items)) {
+        searches = doc.data().items;
+      }
+
+      if (!searches.includes(food)) {
+        searches.unshift(food);
+        if (searches.length > 5) searches.pop();
+        docRef.set({ items: searches });
+      }
+
+      showRecentSearches();
+    });
+  }
+
+  function showRecentSearches() {
+    const user = firebase.auth().currentUser;
+    const recentList = document.getElementById("recentList");
+
+    if (!user || !recentList) return;
+
+    db.collection("recentSearches").doc(user.uid).get().then((doc) => {
+      const items = doc.exists ? doc.data().items || [] : [];
+      recentList.innerHTML = items.map(item => `<span>${capitalize(item)}</span>`).join(" ");
+    });
+  }
+</script>
 </body>
 </html>
