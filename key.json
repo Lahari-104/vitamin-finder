@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "vitamin-finder",
+  "private_key_id": "526a7631bcc603510ea8e7d174fa804fbff14c71",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCoW184i0fqNCYm\nJuHZ1bUPEREPD/xDkcge+4RWBcfJ0yl5lkMkZJOt4FVy1+UFhYzklpCihfdYkiMF\nmZZV0VdUGVt0EhakJmkV4XnhvxKn3pXrZrsAvwadDV8YsE31hAOCkUpDFekXUawS\nUFPKcie2mOBeQIh5mn8z9RQmF2zCIxYCqX+zxoUSsx0KkPiZLnxY8HjAOFBjt4AD\n9K6EPDY73LBWXCAcWLTIyM5qWkX3QNqhallbGm4qmBVOcuwN3sI0VhHaL/7TaHNa\nEQFwB9Y5nx+1WL34j5nl3lX8ccYvcJwwT+cbtn4S3/HCIyz/XmYo0hGJzpV+ps3H\n+mh64RuTAgMBAAECggEAGH8XDKiuIZn4lQ43nZUWtRGu0ZS/XWuNr/25LzUZxrg8\nGC4bfeTz3KsVc9I4ci8Q+u/HgsZgYO7+kTbcT4dYIBYCdGdEtm9vqe3haKNUiRV+\nQJQgO0cQT3NzIKoCkJSRWC22HascpovNMEBSONTsX17A2CX8AEmmdD5sR0XwSWef\nTWNIZJjZdbD978hTaevf5uly2MetNHq7LuhQLFykJmEZoKE7pwiYDwgXpyJVaPpt\njpl1BId4E2GR8QtSk9AwdHu1osbPpVxGvrRS1e9z4FzBgqOLGPfI8Ekk9gAWTXP5\ncDKU/mYILpzKIb5R+QiMpWLRMSLvFD3Fpma5U9H55QKBgQDeSlh/AYiIsT0gDHny\nAobqDnG+HOUsWekFuEmStyzYPXA/Ga/AQvviO/c7t0u7T85iKKtSgp62u3siS4/j\n4CPFzmwBxo8Ogdf1ybqkHkf3NTj9q6jAit9K1Hdl9QQOgeGFpj0uQ7l6xc2s98d2\nhsZB3DV9OdESSC8C0b9e4G4cLQKBgQDB4z7bLXWRty6K+EHd6hteMD00RYT1ZwW9\nk8ASv8ojwnXo7b2Wrx0WWwGQgDzL2JEC9gcUG6TFNu8GWc/aA1sKKTqOwmTOOC3V\nKut9NcSjDWuQUxC8qpnohdzdriews402NEW+Do1nCzyMm32fX7mq8pj+SMPq2hgw\nE9hippIuvwKBgQChNPmI4evKdf8GRwYI5JxDEcabQQlSaMH9S/DPXdg/2g6VNGOo\n4usY3rQlsoBRj0b1GNlmNSQ1ETHzZSks8VgAE/twLjeBJdkgfvPEIdG/DfIOxXbU\na+ITupH8dvxCKR8MdcrYynSw/NJ0Jh2Zb5RIHxMLheqBf6fYO5S1kb1I4QKBgE5H\nzaz4Yat/Zg89xHowdvRETbG5D8F04uBzsuze+mINtUViF1WrRfcsrykEXYd/3Kxx\nYNJBhvkJAOBzinPfPvaPRtE0szZ/gCG8vm9DMi0S0gbnQq6pwpIa2d223td85tqn\nqDDf9z9PThcHAGVEZNYcNKEWB+PeQj3HBWpvDj5JAoGBAL9S6L9Tj1n6MF+pnuzt\n+aqSfAu0qcGd6IHCWTZfRfdlENM61ChQArLcHuNhhp5FPQx/g5QkeBVQ2S20zkC0\nqxCaOxLa6a2w1HGXeKlt3x/T7K51L+IE7cLLBCBzK9uU4eI9+xCONPlCTnGGHuef\nHEZjArJdCj4kmrTYHLFlN3Er\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@vitamin-finder.iam.gserviceaccount.com",
+  "client_id": "108544935402011920518",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40vitamin-finder.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
