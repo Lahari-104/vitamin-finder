@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vitamin Finder - Login</title>
+  <style>
+    /* Include all common styling here */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .container {
+      background-color: #ffffffcc;
+      margin-top: 40px;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      color: #4a148c;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px 5px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #7b1fa2;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #6a1b9a;
+    }
+    #authMessage {
+      margin-top: 20px;
+      color: red;
+      font-weight: 600;
+    }
+    .link {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Vitamin Finder</h1>
+    <h3>Login</h3>
+    <input type="text" id="loginUsername" placeholder="Username" />
+    <input type="password" id="loginPassword" placeholder="Password" />
+    <br />
+    <button onclick="logIn()">Login</button>
+    <div id="authMessage"></div>
+    <p class="link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+  </div>
+
+  <script>
+    function logIn() {
+      const username = document.getElementById('loginUsername').value.trim();
+      const password = document.getElementById('loginPassword').value.trim();
+      const message = document.getElementById('authMessage');
+
+      if (!username || !password) {
+        message.textContent = "Please enter both username and password.";
+        return;
+      }
+
+      let users = JSON.parse(localStorage.getItem('users')) || {};
+
+      if (users[username] && users[username] === password) {
+        localStorage.setItem('loggedInUser', username);
+        window.location.href = 'dashboard.html';
+      } else {
+        message.textContent = "Invalid username or password.";
+      }
+    }
+  </script>
+</body>
+</html>

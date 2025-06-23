@@ -1,0 +1,531 @@
+{
+    "fruits": {
+        "apple": {
+            "image": "images/apple.jpeg",
+            "vitamins": {
+                "Vitamin C": "53.2 mg (59% DV)",
+                "Thiamin (B1)": "0.087 mg (7% DV)",
+                "Riboflavin (B2)": "0.04 mg (3% DV)",
+                "Niacin (B3)": "0.4 mg (3% DV)",
+                "Vitamin B6": "0.06 mg (5% DV)",
+                "Folate (B9)": "30 µg (8% DV)",
+                "Vitamin A": "225 IU (5% DV)",
+                "Vitamin E": "0.18 mg (1% DV)",
+                "Vitamin K": "trace"
+            }
+        },
+        "banana": {
+            "image": "images/banana.jpeg",
+            "vitamins": {
+                "Vitamin C": "8.7 mg (10% DV)",
+                "Thiamin (B1)": "0.031 mg (3% DV)",
+                "Riboflavin (B2)": "0.073 mg (6% DV)",
+                "Niacin (B3)": "0.665 mg (4% DV)",
+                "Vitamin B6": "0.367 mg (28% DV)",
+                "Folate (B9)": "20 µg (5% DV)",
+                "Vitamin A": "64 IU (1% DV)",
+                "Vitamin E": "0.10 mg (1% DV)",
+                "Vitamin K": "0.5 µg (1% DV)"
+            }
+        },
+        "orange": {
+            "image": "images/orange.jpeg",
+            "vitamins": {
+                "Vitamin C": "53.2 mg (59% DV)",
+                "Thiamin (B1)": "0.087 mg (7% DV)",
+                "Riboflavin (B2)": "0.04 mg (3% DV)",
+                "Niacin (B3)": "0.4 mg (3% DV)",
+                "Vitamin B6": "0.06 mg (5% DV)",
+                "Folate (B9)": "30 µg (8% DV)",
+                "Vitamin A": "225 IU (5% DV)",
+                "Vitamin E": "0.18 mg (1% DV)",
+                "Vitamin K": "trace"
+            }
+        },
+        "mango": {
+            "image": "images/mango.jpeg",
+            "vitamins": {
+                "Vitamin C": "36.4 mg (40% DV)",
+                "Thiamin (B1)": "0.028 mg (2% DV)",
+                "Riboflavin (B2)": "0.038 mg (3% DV)",
+                "Niacin (B3)": "0.669 mg (4% DV)",
+                "Vitamin B6": "0.119 mg (9% DV)",
+                "Folate (B9)": "43 µg (11% DV)",
+                "Vitamin A": "1082 IU (22% DV)",
+                "Vitamin E": "0.9 mg (6% DV)",
+                "Vitamin K": "4.2 µg (5% DV)"
+            }
+        },
+        "grapes": {
+            "image": "images/grapes.jpeg",
+            "vitamins": {
+                "Vitamin C": "3.2 mg (4% DV)",
+                "Thiamin (B1)": "0.069 mg (6% DV)",
+                "Riboflavin (B2)": "0.07 mg (5% DV)",
+                "Niacin (B3)": "0.188 mg (1% DV)",
+                "Vitamin B6": "0.086 mg (7% DV)",
+                "Folate (B9)": "2 µg (1% DV)",
+                "Vitamin A": "66 IU (1% DV)",
+                "Vitamin E": "0.19 mg (1% DV)",
+                "Vitamin K": "14.6 µg (18% DV)"
+            }
+        },
+        "pineapple": {
+            "image": "images/pineapple.jpeg",
+            "vitamins": {
+                "Vitamin C": "47.8 mg (53% DV)",
+                "Thiamin (B1)": "0.079 mg (7% DV)",
+                "Riboflavin (B2)": "0.032 mg (2% DV)",
+                "Niacin (B3)": "0.5 mg (3% DV)",
+                "Vitamin B6": "0.112 mg (9% DV)",
+                "Folate (B9)": "18 µg (5% DV)",
+                "Vitamin A": "58 IU (1% DV)",
+                "Vitamin E": "0.02 mg (0% DV)",
+                "Vitamin K": "0.7 µg (1% DV)"
+            }
+        },
+        "strawberry": {
+            "image": "images/strawberry.jpeg",
+            "vitamins": {
+                "Vitamin C": "58.8 mg (65% DV)",
+                "Thiamin (B1)": "0.024 mg (2% DV)",
+                "Riboflavin (B2)": "0.022 mg (2% DV)",
+                "Niacin (B3)": "0.386 mg (2% DV)",
+                "Vitamin B6": "0.047 mg (4% DV)",
+                "Folate (B9)": "24 µg (6% DV)",
+                "Vitamin A": "17 IU (0% DV)",
+                "Vitamin E": "0.29 mg (2% DV)",
+                "Vitamin K": "2.2 µg (3% DV)"
+            }
+        },
+        "kiwi": {
+            "image": "images/kiwi.jpeg",
+            "vitamins": {
+                "Vitamin C": "92.7 mg (103% DV)",
+                "Thiamin (B1)": "0.027 mg (2% DV)",
+                "Riboflavin (B2)": "0.025 mg (2% DV)",
+                "Niacin (B3)": "0.341 mg (2% DV)",
+                "Vitamin B6": "0.063 mg (5% DV)",
+                "Folate (B9)": "25 µg (6% DV)",
+                "Vitamin A": "87 IU (2% DV)",
+                "Vitamin E": "1.46 mg (10% DV)",
+                "Vitamin K": "40.3 µg (34% DV)"
+            }
+        },
+        "dragonfruit": {
+            "image": "images/dragonfruit.jpeg",
+            "vitamins": {
+                "Vitamin C": "20.5 mg (23% DV)",
+                "Thiamin (B1)": "0.04 mg (3% DV)",
+                "Riboflavin (B2)": "0.06 mg (5% DV)",
+                "Niacin (B3)": "0.16 mg (1% DV)",
+                "Vitamin B6": "0.043 mg (3% DV)",
+                "Folate (B9)": "7 µg (2% DV)",
+                "Vitamin A": "59 IU (1% DV)",
+                "Vitamin E": "0.03 mg (0% DV)",
+                "Vitamin K": "trace"
+            }
+        },
+        "avacado": {
+            "image": "images/avacado.jpeg",
+            "vitamins": {
+                "Vitamin C": "10 mg (11% DV)",
+                "Thiamin (B1)": "0.067 mg (6% DV)",
+                "Riboflavin (B2)": "0.13 mg (10% DV)",
+                "Niacin (B3)": "1.738 mg (11% DV)",
+                "Vitamin B6": "0.257 mg (20% DV)",
+                "Folate (B9)": "81 µg (20% DV)",
+                "Vitamin A": "146 IU (3% DV)",
+                "Vitamin E": "2.07 mg (14% DV)",
+                "Vitamin K": "21 µg (18% DV)"
+            }
+        },
+        "pomegranate": {
+            "image": "images/pomegranate.jpeg",
+            "vitamins": {
+                "Vitamin C": "10.2 mg (11% DV)",
+                "Thiamin (B1)": "0.067 mg (6% DV)",
+                "Riboflavin (B2)": "0.053 mg (4% DV)",
+                "Niacin (B3)": "0.293 mg (2% DV)",
+                "Vitamin B6": "0.075 mg (6% DV)",
+                "Folate (B9)": "38 µg (10% DV)",
+                "Vitamin A": "0 IU (0% DV)",
+                "Vitamin E": "0.6 mg (4% DV)",
+                "Vitamin K": "16.4 µg (14% DV)"
+            }
+        },
+        "watermelon": {
+            "image": "images/watermelon.jpeg",
+            "vitamins": {
+                "Vitamin C": "8.1 mg (9% DV)",
+                "Thiamin (B1)": "0.033 mg (3% DV)",
+                "Riboflavin (B2)": "0.021 mg (2% DV)",
+                "Niacin (B3)": "0.178 mg (1% DV)",
+                "Vitamin B6": "0.045 mg (3% DV)",
+                "Folate (B9)": "3 µg (1% DV)",
+                "Vitamin A": "569 IU (11% DV)",
+                "Vitamin E": "0.05 mg (0% DV)",
+                "Vitamin K": "0.1 µg (0% DV)"
+            }
+        },
+        "cherry": {
+            "image": "images/cherry.jpeg",
+            "vitamins": {
+                "Vitamin C": "7 mg (8% DV)",
+                "Thiamin (B1)": "0.027 mg (2% DV)",
+                "Riboflavin (B2)": "0.033 mg (3% DV)",
+                "Niacin (B3)": "0.154 mg (1% DV)",
+                "Vitamin B6": "0.049 mg (4% DV)",
+                "Folate (B9)": "4 µg (1% DV)",
+                "Vitamin A": "64 IU (1% DV)",
+                "Vitamin E": "0.07 mg (0% DV)",
+                "Vitamin K": "2.1 µg (2% DV)"
+            }
+        }
+    },
+    "vegetables": {
+        "carrot": {
+            "image": "images/carrot.jpeg",
+            "vitamins": {
+                "Vitamin C": "5.9 mg (7% DV)",
+                "Thiamin (B1)": "0.066 mg (6% DV)",
+                "Riboflavin (B2)": "0.058 mg (4% DV)",
+                "Niacin (B3)": "0.983 mg (6% DV)",
+                "Vitamin B6": "0.138 mg (11% DV)",
+                "Folate (B9)": "19 µg (5% DV)",
+                "Vitamin A": "16,706 IU (334% DV)",
+                "Vitamin E": "0.66 mg (4% DV)",
+                "Vitamin K": "13.2 µg (11% DV)"
+            }
+        },
+        "spinach": {
+            "image": "images/spinach.jpeg",
+            "vitamins": {
+                "Vitamin C": "28.1 mg (31% DV)",
+                "Thiamin (B1)": "0.078 mg (7% DV)",
+                "Riboflavin (B2)": "0.189 mg (15% DV)",
+                "Niacin (B3)": "0.724 mg (5% DV)",
+                "Vitamin B6": "0.195 mg (15% DV)",
+                "Folate (B9)": "194 µg (49% DV)",
+                "Vitamin A": "9,377 IU (188% DV)",
+                "Vitamin E": "2.03 mg (14% DV)",
+                "Vitamin K": "482.9 µg (402% DV)"
+            }
+        },
+        "potato": {
+            "image": "images/potato.jpeg",
+            "vitamins": {
+                "Vitamin C": "19.7 mg (22% DV)",
+                "Thiamin (B1)": "0.081 mg (7% DV)",
+                "Riboflavin (B2)": "0.034 mg (3% DV)",
+                "Niacin (B3)": "1.4 mg (9% DV)",
+                "Vitamin B6": "0.298 mg (23% DV)",
+                "Folate (B9)": "15 µg (4% DV)",
+                "Vitamin A": "2 IU (0% DV)",
+                "Vitamin E": "0.01 mg (0% DV)",
+                "Vitamin K": "2 µg (2% DV)"
+            }
+        },
+        "tomato": {
+            "image": "images/tomato.jpeg",
+            "vitamins": {
+                "Vitamin C": "13.7 mg (15% DV)",
+                "Thiamin (B1)": "0.037 mg (3% DV)",
+                "Riboflavin (B2)": "0.019 mg (1% DV)",
+                "Niacin (B3)": "0.594 mg (4% DV)",
+                "Vitamin B6": "0.08 mg (6% DV)",
+                "Folate (B9)": "15 µg (4% DV)",
+                "Vitamin A": "833 IU (17% DV)",
+                "Vitamin E": "0.54 mg (4% DV)",
+                "Vitamin K": "7.9 µg (7% DV)"
+            }
+        },
+        "brinjal": {
+            "image": "images/brinjal.jpeg",
+            "vitamins": {
+                "Vitamin C": "2.2 mg (2% DV)",
+                "Thiamin (B1)": "0.039 mg (3% DV)",
+                "Riboflavin (B2)": "0.037 mg (3% DV)",
+                "Niacin (B3)": "0.649 mg (4% DV)",
+                "Vitamin B6": "0.084 mg (6% DV)",
+                "Folate (B9)": "22 µg (6% DV)",
+                "Vitamin A": "23 IU (0% DV)",
+                "Vitamin E": "0.3 mg (2% DV)",
+                "Vitamin K": "3.5 µg (3% DV)"
+            }
+        },
+        "drumstick": {
+            "image": "images/drumstick.jpeg",
+            "vitamins": {
+                "Vitamin C": "120 mg (133% DV)",
+                "Thiamin (B1)": "0.257 mg (21% DV)",
+                "Riboflavin (B2)": "0.49 mg (38% DV)",
+                "Niacin (B3)": "2.17 mg (14% DV)",
+                "Vitamin B6": "0.063 mg (5% DV)",
+                "Folate (B9)": "40 µg (10% DV)",
+                "Vitamin A": "7564 IU (151% DV)",
+                "Vitamin E": "1.42 mg (9% DV)",
+                "Vitamin K": "0 µg (0% DV)"
+            }
+        },
+        "ladysfinger's": {
+            "image": "images/ladysfinger.jpeg",
+            "vitamins": {
+                "Vitamin C": "23 mg (26% DV)",
+                "Thiamin (B1)": "0.2 mg (17% DV)",
+                "Riboflavin (B2)": "0.09 mg (7% DV)",
+                "Niacin (B3)": "1.03 mg (6% DV)",
+                "Vitamin B6": "0.21 mg (16% DV)",
+                "Folate (B9)": "60 µg (15% DV)",
+                "Vitamin A": "375 IU (8% DV)",
+                "Vitamin E": "0.42 mg (3% DV)",
+                "Vitamin K": "53 µg (44% DV)"
+            }
+        },
+        "cucumber": {
+            "image": "images/cucumber.jpeg",
+            "vitamins": {
+                "Vitamin C": "2.8 mg (3% DV)",
+                "Thiamin (B1)": "0.027 mg (2% DV)",
+                "Riboflavin (B2)": "0.033 mg (3% DV)",
+                "Niacin (B3)": "0.098 mg (1% DV)",
+                "Vitamin B6": "0.04 mg (3% DV)",
+                "Folate (B9)": "7 µg (2% DV)",
+                "Vitamin A": "105 IU (2% DV)",
+                "Vitamin E": "0.03 mg (0% DV)",
+                "Vitamin K": "16.4 µg (14% DV)"
+            }
+        },
+        "ridgegourd": {
+            "image": "images/ridgegourd.jpeg",
+            "vitamins": {
+                "Vitamin C": "17.1 mg (19% DV)",
+                "Thiamin (B1)": "0.04 mg (3% DV)",
+                "Riboflavin (B2)": "0.03 mg (2% DV)",
+                "Niacin (B3)": "0.8 mg (5% DV)",
+                "Vitamin B6": "0.07 mg (5% DV)",
+                "Folate (B9)": "22 µg (6% DV)",
+                "Vitamin A": "106 IU (2% DV)",
+                "Vitamin E": "0.08 mg (1% DV)",
+                "Vitamin K": "1.2 µg (1% DV)"
+            }
+        },
+        "pumpkin": {
+            "image": "images/pumpkin.jpeg",
+            "vitamins": {
+                "Vitamin C": "9 mg (10% DV)",
+                "Thiamin (B1)": "0.05 mg (4% DV)",
+                "Riboflavin (B2)": "0.13 mg (10% DV)",
+                "Niacin (B3)": "1.04 mg (7% DV)",
+                "Vitamin B6": "0.061 mg (5% DV)",
+                "Folate (B9)": "16 µg (4% DV)",
+                "Vitamin A": "8513 IU (170% DV)",
+                "Vitamin E": "1.06 mg (7% DV)",
+                "Vitamin K": "1.1 µg (1% DV)"
+            }
+        },
+        "peas": {
+            "image": "images/peas.jpeg",
+            "vitamins": {
+                "Vitamin C": "40 mg (44% DV)",
+                "Thiamin (B1)": "0.266 mg (22% DV)",
+                "Riboflavin (B2)": "0.132 mg (10% DV)",
+                "Niacin (B3)": "2.09 mg (13% DV)",
+                "Vitamin B6": "0.169 mg (13% DV)",
+                "Folate (B9)": "65 µg (16% DV)",
+                "Vitamin A": "765 IU (15% DV)",
+                "Vitamin E": "0.13 mg (1% DV)",
+                "Vitamin K": "24.8 µg (21% DV)"
+            }
+        }
+    },
+    "dairy": {
+        "milk": {
+            "image": "images/milk.jpeg",
+            "vitamins": {
+                "Vitamin B2 (Riboflavin)": "0.18 mg (14% DV)",
+                "Vitamin B12": "0.45 µg (19% DV)",
+                "Vitamin A": "46 µg (5% DV)",
+                "Vitamin D": "1 µg (7% DV)",
+                "Vitamin B3 (Niacin)": "0.09 mg (1% DV)",
+                "Vitamin B5 (Pantothenic Acid)": "0.39 mg (8% DV)"
+            }
+        },
+        "butter": {
+            "image": "images/butter.jpeg",
+            "vitamins": {
+                "Vitamin A": "149 µg (17% DV)",
+                "Vitamin D": "1 µg (7% DV)",
+                "Vitamin E": "0.3 mg (2% DV)",
+                "Vitamin K": "2.1 µg (2% DV)"
+            }
+        },
+        "cheese": {
+            "image": "images/cheese.jpeg",
+            "vitamins": {
+                "Vitamin A": "150 µg (17% DV)",
+                "Vitamin B2 (Riboflavin)": "0.1 mg (8% DV)",
+                "Vitamin B12": "0.4 µg (17% DV)",
+                "Vitamin D": "0.2 µg (1% DV)",
+                "Vitamin K": "2.4 µg (2% DV)"
+            }
+        },
+        "yogurt": {
+            "image": "images/yogurt.jpeg",
+            "vitamins": {
+                "Vitamin B2 (Riboflavin)": "0.14 mg (11% DV)",
+                "Vitamin B12": "0.37 µg (15% DV)",
+                "Vitamin D": "0.5 µg (3% DV)",
+                "Vitamin A": "14 µg (2% DV)"
+            }
+        }
+    },
+    "grains": {
+        "wheat": {
+            "image": "images/wheat.jpeg",
+            "vitamins": {
+                "Vitamin B1 (Thiamin)": "0.5 mg (42% DV)",
+                "Vitamin B2 (Riboflavin)": "0.1 mg (8% DV)",
+                "Vitamin B3 (Niacin)": "6.3 mg (39% DV)",
+                "Vitamin B6": "0.3 mg (20% DV)",
+                "Folate (B9)": "38 µg (10% DV)",
+                "Vitamin E": "1.0 mg (7% DV)",
+                "Vitamin K": "1.9 µg (2% DV)"
+            }
+        },
+        "rice": {
+            "image": "images/rice.jpeg",
+            "vitamins": {
+                "Vitamin B1 (Thiamin)": "0.07 mg (6% DV)",
+                "Vitamin B2 (Riboflavin)": "0.02 mg (2% DV)",
+                "Vitamin B3 (Niacin)": "1.6 mg (10% DV)",
+                "Vitamin B6": "0.1 mg (7% DV)",
+                "Folate (B9)": "8 µg (2% DV)",
+                "Vitamin E": "0.04 mg (<1% DV)",
+                "Vitamin K": "0.1 µg (<1% DV)"
+            }
+        },
+        "corn": {
+            "image": "images/corn.jpeg",
+            "vitamins": {
+                "Vitamin B1 (Thiamin)": "0.2 mg (17% DV)",
+                "Vitamin B3 (Niacin)": "1.7 mg (11% DV)",
+                "Vitamin B5 (Pantothenic acid)": "0.7 mg (14% DV)",
+                "Vitamin B6": "0.1 mg (7% DV)",
+                "Folate (B9)": "42 µg (11% DV)",
+                "Vitamin C": "6.8 mg (8% DV)",
+                "Vitamin A": "187 IU (4% DV)",
+                "Vitamin E": "0.07 mg (<1% DV)",
+                "Vitamin K": "0.3 µg (<1% DV)"
+            }
+        },
+        "oats": {
+            "image": "images/oats.jpeg",
+            "vitamins": {
+                "Vitamin B1 (Thiamin)": "0.46 mg (38% DV)",
+                "Vitamin B2 (Riboflavin)": "0.14 mg (11% DV)",
+                "Vitamin B3 (Niacin)": "0.96 mg (6% DV)",
+                "Vitamin B5 (Pantothenic acid)": "1.3 mg (27% DV)",
+                "Vitamin B6": "0.1 mg (8% DV)",
+                "Folate (B9)": "32 µg (8% DV)",
+                "Vitamin E": "0.42 mg (3% DV)",
+                "Vitamin K": "2 µg (2% DV)"
+            }
+        },
+        "brownrice": {
+            "image": "images/brownrice.jpeg",
+            "vitamins": {
+                "Vitamin B1 (Thiamin)": "0.18 mg (15% DV)",
+                "Vitamin B3 (Niacin)": "2.59 mg (16% DV)",
+                "Vitamin B5 (Pantothenic acid)": "0.38 mg (8% DV)",
+                "Vitamin B6": "0.29 mg (22% DV)",
+                "Folate (B9)": "9 µg (2% DV)",
+                "Vitamin E": "0.17 mg (1% DV)",
+                "Vitamin K": "0.6 µg (1% DV)"
+            }
+        },
+        "barley": {
+            "image": "images/barley.jpeg",
+            "vitamins": {
+                "Vitamin B1 (Thiamin)": "0.12 mg (10% DV)",
+                "Vitamin B3 (Niacin)": "2.84 mg (18% DV)",
+                "Vitamin B5 (Pantothenic acid)": "0.28 mg (6% DV)",
+                "Vitamin B6": "0.26 mg (20% DV)",
+                "Folate (B9)": "16 µg (4% DV)",
+                "Vitamin E": "0.02 mg (0% DV)",
+                "Vitamin K": "1.3 µg (1% DV)"
+            }
+        }
+    },
+    "meat": {
+        "chicken": {
+            "image": "images/chicken.jpeg",
+            "vitamins": {
+                "Vitamin B1 (Thiamin)": "0.07 mg (6% DV)",
+                "Vitamin B2 (Riboflavin)": "0.13 mg (10% DV)",
+                "Vitamin B3 (Niacin)": "13.7 mg (86% DV)",
+                "Vitamin B5 (Pantothenic acid)": "1.0 mg (20% DV)",
+                "Vitamin B6": "0.6 mg (46% DV)",
+                "Vitamin B12": "0.3 µg (13% DV)",
+                "Vitamin D": "0.1 µg (1% DV)"
+            }
+        },
+        "fish": {
+            "image": "images/fish.jpeg",
+            "vitamins": {
+                "Vitamin B1 (Thiamin)": "0.11 mg (9% DV)",
+                "Vitamin B2 (Riboflavin)": "0.07 mg (5% DV)",
+                "Vitamin B3 (Niacin)": "2.5 mg (16% DV)",
+                "Vitamin B6": "0.6 mg (46% DV)",
+                "Vitamin B12": "1.6 µg (67% DV)",
+                "Vitamin D": "3.5 µg (18% DV)",
+                "Vitamin E": "0.9 mg (6% DV)"
+            }
+        },
+        "crab": {
+            "image": "images/crab.jpeg",
+            "vitamins": {
+                "Vitamin B1 (Thiamin)": "0.02 mg (2% DV)",
+                "Vitamin B2 (Riboflavin)": "0.05 mg (4% DV)",
+                "Vitamin B3 (Niacin)": "2.0 mg (13% DV)",
+                "Vitamin B6": "0.2 mg (15% DV)",
+                "Vitamin B12": "11.5 µg (479% DV)",
+                "Vitamin C": "7.6 mg (8% DV)",
+                "Vitamin A": "2 µg (0% DV)"
+            }
+        },
+        "prawn": {
+            "image": "images/prawn.jpeg",
+            "vitamins": {
+                "Vitamin B12": "1.11 µg (46% DV)",
+                "Vitamin B6": "0.12 mg (9% DV)",
+                "Vitamin E": "1.9 mg (13% DV)",
+                "Vitamin A": "54 µg (6% DV)",
+                "Vitamin C": "1.4 mg (2% DV)",
+                "Niacin (B3)": "1.9 mg (12% DV)",
+                "Folate (B9)": "19 µg (5% DV)"
+            }
+        },
+        "mutton": {
+            "image": "images/mutton.jpeg",
+            "vitamins": {
+                "Vitamin B12": "2.5 µg (104% DV)",
+                "Vitamin B6": "0.2 mg (15% DV)",
+                "Niacin (B3)": "6.2 mg (39% DV)",
+                "Riboflavin (B2)": "0.2 mg (15% DV)",
+                "Pantothenic Acid (B5)": "0.8 mg (16% DV)",
+                "Vitamin A": "15 µg (2% DV)"
+            }
+        },
+        "salmon": {
+            "image": "images/salmon.jpeg",
+            "vitamins": {
+                "Vitamin B12": "3.2 µg (133% DV)",
+                "Vitamin D": "10.9 µg (55% DV)",
+                "Vitamin B6": "0.8 mg (47% DV)",
+                "Vitamin B3 (Niacin)": "8.6 mg (54% DV)",
+                "Vitamin A": "40 µg (4% DV)"
+            }
+        }
+    }
+}
