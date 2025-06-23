@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vitamin Finder - Signup</title>
   <style>
-    /* Same styling as login.html */
     body {
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to right, #fbc2eb, #a6c1ee);
@@ -66,45 +65,42 @@
     <div id="authMessage"></div>
     <p class="link">Already have an account? <a href="login.html">Login</a></p>
   </div>
-<!-- Firebase SDKs -->
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
 
-<script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyDTM_rZ0WvM793rXodCzGJhUDvwNEGSTF0",
-    authDomain: "vitamin-finder.firebaseapp.com",
-    projectId: "vitamin-finder",
-    storageBucket: "vitamin-finder.firebasestorage.app",
-    messagingSenderId: "197524152257",
-    appId: "1:197524152257:web:ae0bc1ccc0445953195940",
-    measurementId: "G-MTGPYKEVF9"
-  };
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDTM_rZ0WvM793rXodCzGJhUDvwNEGSTF0",
+      authDomain: "vitamin-finder.firebaseapp.com",
+      projectId: "vitamin-finder",
+      storageBucket: "vitamin-finder.firebasestorage.app",
+      messagingSenderId: "197524152257",
+      appId: "1:197524152257:web:ae0bc1ccc0445953195940",
+      measurementId: "G-MTGPYKEVF9"
+    };
 
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig);
 
-  function signUp() {
-    const email = document.getElementById('signupUsername').value.trim();
-    const password = document.getElementById('signupPassword').value.trim();
-    const message = document.getElementById('authMessage');
+    function signUp() {
+      const email = document.getElementById('signupUsername').value.trim();
+      const password = document.getElementById('signupPassword').value.trim();
+      const message = document.getElementById('authMessage');
 
-    if (!email || !password) {
-      message.textContent = "Please enter both email and password.";
-      return;
+      if (!email || !password) {
+        message.textContent = "Please enter both email and password.";
+        return;
+      }
+
+      firebase.auth().createUserWithEmailAndPassword(email, password)
+        .then(() => {
+          message.style.color = "green";
+          message.textContent = "Sign up successful! You can now log in.";
+        })
+        .catch((error) => {
+          message.style.color = "red";
+          message.textContent = error.message;
+        });
     }
-
-    firebase.auth().createUserWithEmailAndPassword(email, password)
-      .then(() => {
-        message.style.color = "green";
-        message.textContent = "Sign up successful! You can now log in.";
-      })
-      .catch((error) => {
-        message.style.color = "red";
-        message.textContent = error.message;
-      });
-  }
-</script>
-
+  </script>
 </body>
 </html>
