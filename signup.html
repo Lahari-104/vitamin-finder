@@ -59,38 +59,52 @@
   <div class="container">
     <h1>Vitamin Finder</h1>
     <h3>Sign Up</h3>
-    <input type="text" id="signupUsername" placeholder="Username" />
+    <input type="email" id="signupUsername" placeholder="Email" />
     <input type="password" id="signupPassword" placeholder="Password" />
     <br />
     <button onclick="signUp()">Sign Up</button>
     <div id="authMessage"></div>
     <p class="link">Already have an account? <a href="login.html">Login</a></p>
   </div>
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
 
-  <script>
-    function signUp() {
-      const username = document.getElementById('signupUsername').value.trim();
-      const password = document.getElementById('signupPassword').value.trim();
-      const message = document.getElementById('authMessage');
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyDTM_rZ0WvM793rXodCzGJhUDvwNEGSTF0",
+    authDomain: "vitamin-finder.firebaseapp.com",
+    projectId: "vitamin-finder",
+    storageBucket: "vitamin-finder.firebasestorage.app",
+    messagingSenderId: "197524152257",
+    appId: "1:197524152257:web:ae0bc1ccc0445953195940",
+    measurementId: "G-MTGPYKEVF9"
+  };
 
-      if (!username || !password) {
-        message.textContent = "Please enter both username and password.";
-        return;
-      }
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
-      let users = JSON.parse(localStorage.getItem('users')) || {};
+  function signUp() {
+    const email = document.getElementById('signupUsername').value.trim();
+    const password = document.getElementById('signupPassword').value.trim();
+    const message = document.getElementById('authMessage');
 
-      if (users[username]) {
-        message.textContent = "Username already exists.";
-        return;
-      }
-
-      users[username] = password;
-      localStorage.setItem('users', JSON.stringify(users));
-      message.style.color = "green";
-      message.textContent = "Sign up successful. You can now log in.";
+    if (!email || !password) {
+      message.textContent = "Please enter both email and password.";
+      return;
     }
-    <p>Already have an account? <a href="login.html">Login here</a></p>
-  </script>
+
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+      .then(() => {
+        message.style.color = "green";
+        message.textContent = "Sign up successful! You can now log in.";
+      })
+      .catch((error) => {
+        message.style.color = "red";
+        message.textContent = error.message;
+      });
+  }
+</script>
+
 </body>
 </html>
